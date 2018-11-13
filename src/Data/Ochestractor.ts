@@ -12,6 +12,7 @@ export function getArtist(artist:string){
 
     const response = sendToApi(baseurl,dataType,data);
     return response;
+    
 }
 
 export function getArtistAlbum(id:number){
