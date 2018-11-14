@@ -3,7 +3,7 @@ import {getArtist,getAlbum} from '../Data'
 /*
  Generate playlist
 */
-export function createPlayList(baseUrl:string , songs){
+export function createPlayList(baseUrl, songs){
     songs = songs.map(song => song.id).join(',');
     const newSongs = baseUrl + songs
     return songs;

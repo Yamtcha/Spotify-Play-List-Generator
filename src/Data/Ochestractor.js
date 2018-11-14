@@ -1,7 +1,7 @@
 import {sendToApi} from '../Store'
 import {createPlayList,getTop20} from '../Utils'
 
-export function getArtist(artist:string){
+export function getArtist(artist){
     const baseurl = 'https://api.spotify.com/v1/search';
     const dataType = 'json';
     const data = {
@@ -14,7 +14,7 @@ export function getArtist(artist:string){
     return response;
 }
 
-export function getArtistAlbum(id:number){
+export function getArtistAlbum(id){
     const baseurl = `https://api.spotify.com/v1/artists/${id}/albums`;
     const dataType = 'json';
 	const data = {
@@ -25,7 +25,7 @@ export function getArtistAlbum(id:number){
     return response
 }
 
-export function getAlbumsTracks(id:number){
+export function getAlbumsTracks(id){
     const baseurl = `https://api.spotify.com/v1/albums/${id}/tracks`;
     const dataType = 'json';
 

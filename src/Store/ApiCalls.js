@@ -6,7 +6,7 @@ var router = express.Router();
  This is the function that is going to be responsible making the api calls to the sportify api using express
 */
 
-export function sendToApi(baseurl:string , dataType:string ,data?:object){
+export function sendToApi(baseurl, dataType ,data){
     
     const response = router.get('/', function(req,res){    
         try {
